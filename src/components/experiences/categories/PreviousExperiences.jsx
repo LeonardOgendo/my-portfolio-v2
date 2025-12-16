@@ -5,53 +5,51 @@ import { calculateMonths } from '../../../shared/utils/dateUtils';
 
 const experienceData = [
     {
-        jobTitle: 'Recon & Asset Mapping Analyst - Bug Bounty',
+        jobTitle: 'Freelance Software Developer',
+        company: 'Online Platforms | Casual Contracts',
+        location: 'Remote',
+        startDate: '2022-02-01',
+        endDate: '2025-08-18',
+        dateLabel: 'February 2022 – August 2025',
+        activities: [
+            {
+                title: 'Delivered Full-Stack Web Solutions using Django & MERN',
+                description:
+                    'Developed and deployed secure, API-driven applications using Django REST Framework and Express.js. Built dynamic frontends with React, integrating features like authentication, dashboards, and admin panels.',
+            },
+            {
+                title: 'Implemented Scalable Architectures with Security in Focus',
+                description:
+                    'Designed backend architectures with modular structure, JWT authentication, and RBAC. Applied input validation, rate limiting, and HTTPS configurations to protect against common vulnerabilities.',
+            },
+            {
+                title: 'Automated Deployments & Streamlined Workflows',
+                description:
+                    'Configured GitHub Actions for continuous integration and deployment. Reduced delivery time by automating tests, linting, and deploys across freelance projects using Docker, Heroku, and Netlify.',
+            },
+        ],
+    },
+
+    {
+        jobTitle: 'Cybersecurity Researcher',
         company: 'BugCrowd',
         location: 'Remote',
         startDate: '2024-05-11',
         dateLabel: 'May 2024 – Present',
         activities: [
             {
-                title: 'Conducted Comprehensive Reconnaissance on BugCrowd Assets',
+                title: 'Enumerated Assets, Services, and Technology Stacks Across Bug Bounty Scopes',
                 description:
-                    'Performed passive and active reconnaissance on publicly listed web applications. Utilized tools like Subfinder, Amass, and HTTPx to discover subdomains, technologies, and live endpoints across various scopes.',
+                    'Enumerated subdomains, exposed services, and underlying technology stacks on public bug bounty targets using Amass, Subfinder, Nmap, Nuclei, Wappalyzer, and custom Bash automation.',
             },
             {
-                title: 'Mapped Application Attack Surfaces with Custom Automation',
+                title: 'Identified Potential Entry Points via Passive and Active Reconnaissance',
                 description:
-                    'Created scripts and recon workflows to automate asset mapping and URL fuzzing. Parsed response data to identify exposed directories, API routes, login portals, and potential misconfigurations.',
-            },
-            {
-                title: 'Sharpened Offensive Recon Skills in Real-World Scenarios',
-                description:
-                    'Applied reconnaissance tactics to mirror real attacker methodologies. Practiced chaining intel with tools like Gau, Waybackurls, and GitHub dorking to build a complete picture of web app exposure.',
+                    'Discovered potential attack entry points through passive reconnaissance techniques using Burp Suite, input field mapping, URL fuzzing, and banner grabbing to assess application exposure.',
             },
         ],
     },
-    {
-        jobTitle: 'Web Application Penetration Tester - Personal Projects / Labs',
-        company: 'Self-employed',
-        location: 'Remote',
-        startDate: '2024-02-01',
-        dateLabel: 'February 2024 – Present',
-        activities: [
-            {
-                title: 'Simulated Real-World Exploits Using Pentest Tools & Labs',
-                description:
-                    'Performed offensive testing on DVWA and OWASP Juice Shop using Burp Suite, OWASP ZAP, Nikto, and manual techniques to replicate attacks like SQL Injection, Cross-Site Scripting, and Command Injection.',
-            },
-            {
-                title: 'Documented Vulnerability Findings Using Joplin',
-                description:
-                    'Identified OWASP Top 10 vulnerabilities, analyzed exploitation chains, and wrote clear vulnerability reports to simulate professional pentest documentation.',
-            },
-            {
-                title: 'Built Consistent Testing Workflows for Practice Labs',
-                description:
-                    'Created personal testing flows for efficient recon, exploitation, and reporting in lab environments to simulate structured pentest engagements.',
-            },
-        ],
-    },
+   
     {
         jobTitle: 'Capture The Flag (CTF) Participant',
         company: 'TryHackMe',
@@ -76,6 +74,7 @@ const experienceData = [
             },
         ],
     },
+
     {
         jobTitle: 'Software Developer',
         company: 'Masinde Muliro University of Science and Technology',

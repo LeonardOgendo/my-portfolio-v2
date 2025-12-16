@@ -1,30 +1,26 @@
 import { FaGitAlt, FaGithub, FaDocker } from 'react-icons/fa';
 import { SiPostman, SiGithubactions, SiEslint, SiPrettier, SiSonarqube, SiSnyk } from 'react-icons/si';
 
-const DevSecOps = () => {
+const DevOps = () => {
     const tools = [
         { name: 'Git', icon: <FaGitAlt /> },
         { name: 'GitHub', icon: <FaGithub /> },
         { name: 'GitHub Actions', icon: <SiGithubactions /> },
         { name: 'Docker', icon: <FaDocker /> },
         { name: 'Postman', icon: <SiPostman /> },
-        { name: 'ESLint (Learning)', icon: <SiEslint /> },
-        { name: 'Prettier (Learning)', icon: <SiPrettier /> },
-        { name: 'SonarQube (Learning)', icon: <SiSonarqube /> },
-        { name: 'Snyk (Learning)', icon: <SiSnyk /> }
     ];
 
     return (
         <div className='techd-component'>
             <div className="component-header">
-                <h2 className="category-title">DevSecOps & Tools</h2>
-                <span>DevSecOps</span>
+                <h2 className="category-title">DevOps & Tools</h2>
+                <span>DevOps</span>
             </div>
 
             <p>Tools that support version control, API testing, automation, containerization, and secure coding practices.</p>
 
             <p className='cards-hls'>
-                <span>Git</span> <span>GitHub</span> <span>GitHub Actions</span> <span>Docker</span> <span>Postman</span> <span>ESLint</span> <span>Prettier</span> <span>SonarQube</span> <span>Snyk</span>
+                <span>Git</span> <span>GitHub</span> <span>GitHub Actions</span> <span>Docker</span> <span>Postman</span>
             </p>
 
             <hr className='component-divider' />
@@ -46,4 +42,4 @@ const DevSecOps = () => {
     );
 };
 
-export default DevSecOps;
+export default DevOps;

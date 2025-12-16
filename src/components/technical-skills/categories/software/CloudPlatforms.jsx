@@ -8,7 +8,7 @@ const CloudPlatforms = () => {
         { name: 'Netlify', icon: <SiNetlify /> },
         { name: 'Render', icon: <SiRender /> },
         { name: 'Railway', icon: <SiRailway /> },
-        { name: 'AWS (Learning)', icon: <FaAws /> }
+        { name: 'AWS', icon: <FaAws /> }
     ];
 
     return (

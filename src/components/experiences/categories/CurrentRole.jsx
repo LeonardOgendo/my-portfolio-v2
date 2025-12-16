@@ -2,43 +2,63 @@ import { FaBuilding, FaMapMarkerAlt, FaCalendarAlt } from 'react-icons/fa';
 import { calculateMonths } from '../../../shared/utils/dateUtils';
 
 const CurrentRole = () => {
+
+    const role = {
+        jobTitle : 'Software Engineer',
+        company: 'Afristec Ltd.',
+        location: `Nairobi, Kenya · Hybrid`,
+        startDate: '2025-09-01',
+        dateLabel: 'September 2025 - Present',
+        activities: [
+            {
+                title: 'Owned Full-Stack Development of a School Management Information System (MIS)',
+                description:
+                    'Assumed end-to-end ownership of a School MIS, delivering full-stack enhancements and maintaining core features using React for the frontend and Spring Boot (Java) for backend services.',
+            },
+            {
+                title: 'Developed and Enhanced Modern Frontend Interfaces',
+                description:
+                    'Built and enhanced responsive, user-focused interfaces using React.js and Angular, focusing on usability, performance, and maintainable component-driven design.',
+            },
+            {
+                title: 'Implemented Scalable Frontend–Backend API Integrations',
+                description:
+                    'Designed and integrated RESTful APIs to enable reliable communication between frontend applications and Spring Boot backends, supporting stable, scalable, and maintainable product functionality.',
+            },
+
+        ]
+    }
     
-    const monthsDiff = calculateMonths('2022-02-03');
+    const months = calculateMonths(role.startDate);
 
     return (
         <div className="current-role">
             <div className="role-header">
                 <div className="role-info">
-                    <h3 className="job-title">Freelance Software Developer</h3>
+                    <h3 className="job-title">{role.jobTitle}</h3>
                     <div className="company-location">
-                        <span><FaBuilding /> Online Platforms | Casual Contracts</span>
-                        <span><FaMapMarkerAlt /> Remote</span>
+                        <span><FaBuilding /> {role.company}</span>
+                        <span><FaMapMarkerAlt /> {role.location}</span>
                     </div>
                 </div>
+
                 <div className="role-duration">
-                    <span><FaCalendarAlt /> February 2022 – Present</span>
-                    <span className="role-months">{monthsDiff} {monthsDiff === 1 ? 'month' : 'months'}</span>
+                    <span><FaCalendarAlt /> {role.dateLabel}</span>
+                    <span className="role-months">
+                        {months} {months === 1 ? 'month' : 'months'}
+                    </span>
                 </div>
             </div>
 
             <div className="role-timeline">
                 <div className="timeline-marker"></div>
                 <div className="timeline-activities">
-                    <div className="activity-item">
-                        <h4>Delivered Full-Stack Web Solutions using Django & MERN</h4>
-                        <p>Developed and deployed secure, API-driven applications using Django REST Framework and Express.js. Built dynamic frontends with React, integrating features like authentication, dashboards, and admin panels.</p>
-                    </div>
-
-                    <div className="activity-item">
-                        <h4>Implemented Scalable Architectures with Security in Focus</h4>
-                        <p>Designed backend architectures with modular structure, JWT authentication, and RBAC. Applied input validation, rate limiting, and HTTPS configurations to protect against common vulnerabilities.</p>
-                    </div>
-
-                    <div className="activity-item">
-                        <h4>Automated Deployments & Streamlined Workflows</h4>
-                        <p>Configured GitHub Actions for continuous integration and deployment. Reduced delivery time by automating tests, linting, and deploys across freelance projects using Docker, Heroku, and Netlify.</p>
-                    </div>
-
+                    {role.activities.map((activity, index) => (
+                        <div className="activity-item" key={index}>
+                            <h4>{activity.title}</h4>
+                            <p>{activity.description}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

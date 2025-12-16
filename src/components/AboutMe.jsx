@@ -39,7 +39,7 @@ const AboutMe = () => {
                     <div className="readme">
                         <div id="underline"></div>
                         <p className="pro-name">Leonard Ogendo</p>
-                        <p className="pro-title">Secure Software Engineer | Cybersecurity Specialist </p>
+                        <p className="pro-title">Secure Software & Cybersecurity Engineer</p>
 
                         <p className="pro-desc">
                             I'm an early-career Secure Software Engineer and Cybersecurity Specialist, focused on Secure SDLC, AI-Augmented Cyber Defense/Offense, 

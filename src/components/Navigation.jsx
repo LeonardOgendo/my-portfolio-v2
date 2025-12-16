@@ -16,6 +16,9 @@ function Navigation(){
         'I Am a Cybersecurity Specialist',
         'I Am a Penetration Tester'
     ];
+
+    // CURRENT ROLE
+    const currentRole = "Software Engineer @ Afristec Ltd.";
     
     // State to track portfolio tag
     const [isSoftware, setIsSoftware] = useState(true);
@@ -196,11 +199,11 @@ function Navigation(){
                 <div className="intro">
                     <p className="name">Leonard Ogendo</p>
 
-                    <p className="gen-title">Secure Software Engineer & Cybersecurity Specialist</p>
+                    <p className="gen-title">Secure Software & Cybersecurity Engineer</p>
                     
                     <div className="status">
                         <FaDotCircle className="status-dot" /> 
-                        <p className="c-at"> Currently Freelancing</p>
+                        <p className="c-at">{currentRole}</p>
                     </div>
 
                     <p className="zing">Helping Organizations Build Secure Systems and Protect Digital Assets & Critical Infrastructure</p>
@@ -214,9 +217,9 @@ function Navigation(){
                         <p className="hero-tech">
                             <FaCode className="code-icon" /> Tech Stack:
                             <span id="f-span">Python</span>
+                            <span>Java</span>
                             <span>JavaScript</span>
                             <span>React</span>
-                            <span>Django</span>
                             <span>Node.js</span>
                             <span>+7 more</span>
                         </p>

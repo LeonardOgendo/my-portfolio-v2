@@ -4,7 +4,6 @@ import { SiSanity } from 'react-icons/si';
 const Cms = () => {
     const tools = [
         { name: 'WordPress', icon: <FaWordpress /> },
-        { name: 'Sanity (Learning)', icon: <SiSanity /> }
     ];
 
     return (

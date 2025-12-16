@@ -4,7 +4,7 @@ import { FaCode, FaCubes, FaServer, FaCloud, FaDatabase, FaVial, FaWpforms, FaTe
 
 import SLanguages from "./categories/software/Languages";
 import Frameworks from "./categories/software/Frameworks";
-import DevSecOps from "./categories/software/DevSecOpsTools";
+import DevOps from "./categories/software/DevOpsTools";
 import CloudPlatforms from "./categories/software/CloudPlatforms";
 import Databases from "./categories/software/Databases";
 import TestingTools from "./categories/software/TestingTools";
@@ -74,7 +74,7 @@ const TechnicalSkills = () => {
         software: [
             { title: "Languages", icon: <FaCode />, intro: "Python, JavaScript, more" },
             { title: "Frameworks & Libraries", icon: <FaCubes />, intro: "Django, React, MERN" },
-            { title: "DevSecOps and Tools", icon: <FaServer />, intro: "GitHub Actions, Docker" },
+            { title: "DevOps and Tools", icon: <FaServer />, intro: "GitHub Actions, Docker" },
             { title: "Cloud Platforms", icon: <FaCloud />, intro: "AWS, Vercel, Netlify" },
             { title: "Databases", icon: <FaDatabase />, intro: "MongoDB, PostgreSQL" },
             { title: "Testing Tools", icon: <FaVial />, intro: "Jest, Pytest, Postman" },
@@ -217,7 +217,7 @@ const TechnicalSkills = () => {
                 <div className="skills-main">
                     {activeTab === "software" && activeCategory === "Languages" && <SLanguages />}
                     {activeTab === "software" && activeCategory === "Frameworks & Libraries" && <Frameworks />}
-                    {activeTab === "software" && activeCategory === "DevSecOps and Tools" && <DevSecOps />}
+                    {activeTab === "software" && activeCategory === "DevOps and Tools" && <DevOps />}
                     {activeTab === "software" && activeCategory === "Cloud Platforms" && <CloudPlatforms />}
                     {activeTab === "software" && activeCategory === "Databases" && <Databases />}
                     {activeTab === "software" && activeCategory === "Testing Tools" && <TestingTools />}

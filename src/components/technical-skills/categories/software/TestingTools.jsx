@@ -1,7 +1,5 @@
 import { SiJest, SiTestinglibrary, SiCypress, SiPytest } from 'react-icons/si';
 import { FaPython } from 'react-icons/fa';
-import { MdOutlineIntegrationInstructions } from 'react-icons/md'; // Integration/Test-like
-
 
 const TestingTools = () => {
     const tools = [
@@ -11,7 +9,6 @@ const TestingTools = () => {
         { name: 'Pytest', icon: <SiPytest /> },
         { name: 'Django Test Framework', icon: <FaPython /> },
         { name: 'Unittest', icon: <FaPython /> },
-        { name: 'Playwright (Learning)', icon: <MdOutlineIntegrationInstructions /> }
 
     ];
 
