@@ -12,9 +12,9 @@ import backgroundImage from '../../assets/backgrounds/box-rule3-bg.jpg';
 function Navigation(){
     const texts = [
         "I Am Leonard Ogendo",
-        'Secure Software & Cybersecurity Engineer',
+        'Secure Software Engineer',
         'I Build & Secure Modern Applications',
-        'Application Security • DevSecOps • Security Testing',
+        'Application Security • DevSecOps',
         'I Help Teams Ship Secure Software'
     ];
 
@@ -200,7 +200,7 @@ function Navigation(){
                 <div className="intro">
                     <p className="name">Leonard Ogendo</p>
 
-                    <p className="gen-title">Secure Software & Cybersecurity Engineer</p>
+                    <p className="gen-title">Secure Software Engineer | Application Security • DevSecOps</p>
                     
                     <div className="status">
                         <FaDotCircle className="status-dot" /> 
@@ -219,7 +219,7 @@ function Navigation(){
                             <FaCode className="code-icon" /> Tech Stack:
                             <span id="f-span">Java</span>
                             <span>Python</span>
-                            <span>JavaScript</span>
+                            <span>TypeScript</span>
                             <span>Spring Boot</span>
                             <span>Node.js</span>
                             <span>React</span>
@@ -252,7 +252,7 @@ function Navigation(){
                             </div>
                             <div className="hv-block">
                                 <FaUserShield className="exp-ico" size={18} />
-                                <span>Security Testing</span>
+                                <span>DevSecOps</span>
                             </div>
                             <div className="hv-block">
                                 <FaTools className="exp-ico" size={18} />
@@ -272,17 +272,10 @@ function Navigation(){
                                 </div>
                                 <div className="hv-block">
                                     <FaTools className="exp-ico" size={18} />
-                                    <span>Security Testing</span>
+                                    <span>DevSecOps</span>
                                 </div>
                             
                             </div>
-                            <p className="hero-tech">
-                                <span>Java</span>
-                                <span>Python</span>
-                                <span>JavaScript</span>
-                                <span>Spring Boot</span>
-                                <span>Node.js</span>       
-                            </p>
                         </>
                     )
                     }

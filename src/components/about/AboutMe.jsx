@@ -11,12 +11,11 @@ const AboutMe = () => {
     const aboutMe = {
         // PartA: min 20 words - max 22 words
         partA: 
-            `I build secure applications, APIs, and software systems while helping organizations reduce risk 
-            through application security and security engineering.`
+            `I design, build, and secure modern applications, APIs, and software systems with security 
+            integrated throughout the software development lifecycle.`
         ,
         partB: 
-            `With practical experience in Secure Software Engineering, Application Security, and intelligent
-            security automation, I:`
+            `With practical experience in Secure Software Engineering, Application Security, and DevSecOps, I:`
         ,
         bulletOne: `Design secure systems from development through to deployment`,
         bulletTwo: `Embed security into CI/CD pipelines through automation`,
@@ -59,7 +58,7 @@ const AboutMe = () => {
                         <h2>Hi, I'm</h2>
                         <div id="underline"></div>
                         <p className="pro-name">Leonard Ogendo</p>
-                        <p className="pro-title">Secure Software & Cybersecurity Engineer</p>
+                        <p className="pro-title">Secure Software Engineer | Application Security • DevSecOps</p>
 
                         <div className="pro-desc">
                             { aboutMe.partA } <br /> <br />
@@ -80,7 +79,7 @@ const AboutMe = () => {
                     <div style={{ display: 'flex' }}>
                         <div className="vertical-line"></div>
                         <div className="photo-container">
-                            <span className="work-st">Freelancer</span>
+                            <span className="work-st">{ miniRole }</span>
                             <img src={profilePhoto} alt="profile" />
                         </div>
                     </div>
@@ -91,14 +90,19 @@ const AboutMe = () => {
                         <div className="readme">
                             <div id="underline"></div>
                             <p className="pro-name">Leonard Ogendo</p>
-                            <p className="pro-title">Secure Software & Cybersecurity Engineer </p>
+                            <p className="pro-title">Secure Software Engineer | Application Security • DevSecOps </p>
 
-                            <p className="pro-desc">I’m a Junior Secure Software Engineer actively building deep expertise in Secure SDLC, Web & Mobile Application Security, 
-                                and Cybersecurity Engineering — across Penetration Testing and Blue Team Operations (SOC).
-                                <br />With a strong command of Python and JavaScript, I build and secure modern applications — from the codebase to the cloud. 
-                                My unique advantage lies in blending software engineering and security practices into one unified discipline, allowing me to design and implement 
-                                systems that are resilient by design.
-                                I’m currently focused on understanding how systems break, and building them so they don’t.</p>
+                            <div className="pro-desc">
+                            { aboutMe.partA } <br /> <br />
+                            { aboutMe.partB }
+                        
+                            <ul>
+                                <li><span style={{ color: '#bb5336ff' }}>✪</span> {aboutMe.bulletOne}</li>
+                                <li><span style={{ color: '#bb5336ff' }}>✪</span> {aboutMe.bulletTwo}</li>
+                                <li><span style={{ color: '#bb5336ff' }}>✪</span> {aboutMe.bulletThree}</li>
+                                <li><span style={{ color: '#bb5336ff' }}>✪</span> {aboutMe.bulletFour}</li>
+                            </ul>
+                        </div>
                         </div>
                     </div>
                 </div>

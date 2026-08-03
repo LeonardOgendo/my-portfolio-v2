@@ -52,7 +52,7 @@ const experienceData = [
 
     {
         jobTitle: 'IT Technical Support - Internship',
-        company: 'KeNHA',
+        company: 'Kenya National Highways Authority (KeNHA)',
         location: 'Kakamega County, Kenya · On-site',
         startDate: '2024-05-01',
         endDate: '2024-08-14',
