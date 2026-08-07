@@ -15,7 +15,7 @@ const AboutMe = () => {
             integrated throughout the software development lifecycle.`
         ,
         partB: 
-            `With practical experience in Secure Software Engineering, Application Security, and DevSecOps, I:`
+            `With practical experience in Secure Software Engineering, Application Security, and Security Testing & Automation, I:`
         ,
         bulletOne: `Design secure systems from development through to deployment`,
         bulletTwo: `Embed security into CI/CD pipelines through automation`,
@@ -58,7 +58,7 @@ const AboutMe = () => {
                         <h2>Hi, I'm</h2>
                         <div id="underline"></div>
                         <p className="pro-name">Leonard Ogendo</p>
-                        <p className="pro-title">Secure Software Engineer | Application Security • DevSecOps</p>
+                        <p className="pro-title">Secure Software Engineer | Application Security</p>
 
                         <div className="pro-desc">
                             { aboutMe.partA } <br /> <br />
@@ -90,7 +90,7 @@ const AboutMe = () => {
                         <div className="readme">
                             <div id="underline"></div>
                             <p className="pro-name">Leonard Ogendo</p>
-                            <p className="pro-title">Secure Software Engineer | Application Security • DevSecOps </p>
+                            <p className="pro-title">Secure Software Engineer | Application Security</p>
 
                             <div className="pro-desc">
                             { aboutMe.partA } <br /> <br />

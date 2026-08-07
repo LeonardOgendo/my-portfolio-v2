@@ -192,7 +192,7 @@ function Navigation(){
             {/* Portfolio tag */}
             {!menuOpen && (
                 <span className={`se-tag ${fade ? 'fade-in' : 'fade-out'}`}>
-                    {isSoftware ? "Software Engineer Portfolio" : "Cybersecurity Specialist Portfolio"}
+                    {isSoftware ? "Software Engineer Portfolio" : "AppSec Engineer Portfolio"}
                 </span>
             )}
 
@@ -200,7 +200,7 @@ function Navigation(){
                 <div className="intro">
                     <p className="name">Leonard Ogendo</p>
 
-                    <p className="gen-title">Secure Software Engineer | Application Security • DevSecOps</p>
+                    <p className="gen-title">Secure Software Engineer | Application Security</p>
                     
                     <div className="status">
                         <FaDotCircle className="status-dot" /> 
@@ -219,9 +219,7 @@ function Navigation(){
                             <FaCode className="code-icon" /> Tech Stack:
                             <span id="f-span">Java</span>
                             <span>Python</span>
-                            <span>TypeScript</span>
                             <span>Spring Boot</span>
-                            <span>Node.js</span>
                             <span>React</span>
                             <span>Angular</span>
                             <span>+5 more</span>
@@ -251,12 +249,8 @@ function Navigation(){
                                 <span>Application Security</span>
                             </div>
                             <div className="hv-block">
-                                <FaUserShield className="exp-ico" size={18} />
-                                <span>DevSecOps</span>
-                            </div>
-                            <div className="hv-block">
                                 <FaTools className="exp-ico" size={18} />
-                                <span>Security Automation</span>
+                                <span>Security Testing & Automation</span>
                             </div>
                         </div>
                     ) : (
@@ -272,7 +266,7 @@ function Navigation(){
                                 </div>
                                 <div className="hv-block">
                                     <FaTools className="exp-ico" size={18} />
-                                    <span>DevSecOps</span>
+                                    <span>Security Testing</span>
                                 </div>
                             
                             </div>
